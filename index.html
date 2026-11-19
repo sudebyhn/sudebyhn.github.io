@@ -1332,7 +1332,7 @@ html { overflow-anchor: none; }
 .cp-demo .game-bar a:hover { color: var(--color-accent-hover); }
 .cp-demo iframe { display: block; width: 100%; height: min(82vh, 860px); border: 0; background: #333335; }
 /* player feedback copilot: real screenshots */
-.cp-media.flowbox.pfcflow { aspect-ratio: auto; margin-top: var(--space-lg); }
+.cp-media.flowbox.pfcflow { aspect-ratio: auto; }
 .flowbox.pfcflow .fimgs { aspect-ratio: 1424 / 920; background: #0b1220; }
 .flowbox.pfcflow .fimgs img { object-fit: contain; }
 .pfc-slides { background: #0b1220; overflow: hidden; }
@@ -1581,7 +1581,7 @@ const CASES = {
       { title: 'maliyet ve hız', list: ['Daha önce sınıflandırılmış yorum tekrar modele gönderilmez.', 'Kurallarla elenen yorumların oranı her raporda gösterilir.', 'İşe göre model: sınıflandırmada Haiku, özet ve soru-cevapta Sonnet.', 'Her model çağrısının token sayısı, süresi ve tahmini maliyeti kaydedilir.'] },
       { title: 'değerlendirme', rows: [['rules_only', 'Anahtar kelime tabanlı sınıflandırıcı'], ['llm_only', 'Her yorum doğrudan Claude Haiku’ya'], ['hybrid', 'Kurallar, Claude ve doğrulama'], ['local_hybrid', 'Kurallar, yerel model ve doğrulama']] }
     ],
-    code: { repo: 'player-feedback-copilot', demo: 'player-feedback-copilot/' } },
+    code: { repo: 'player-feedback-copilot' } },
   'offmind-ai': { group: 'own', name: 'offmind ai', short: 'İnternete veri göndermeden, tamamen yerelde çalışan RAG asistanı.',
     lede: 'Tamamen çevrimdışı çalışan, belgelerine dayanarak cevap veren gizlilik odaklı bir yapay zekâ asistanı.',
     tags: ['python', 'ollama', 'chromadb', 'rag'], mock: 'chat-rag',
