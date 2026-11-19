@@ -1302,33 +1302,35 @@ html { overflow-anchor: none; }
 #features-own > .feat.wide { grid-column: 1 / -1; }
 #features-own > .feat.wide ~ .feat:last-child:nth-child(odd) { grid-column: auto; }
 .feat.own.wide .own-mock { aspect-ratio: 1200 / 520; }
-.pfc { position: absolute; inset: 0; background: radial-gradient(60cqw 30cqw at 15% -10%, rgba(76,125,255,.14), transparent 60%), #0A1020; color: #E8EDF7; font-family: Inter, system-ui, sans-serif; padding: 2.4cqw 3cqw; display: grid; grid-template-rows: auto auto 1fr; gap: 1.8cqw; }
+.pfc { position: absolute; inset: 0; background: #1C1C1E; color: #F4F4F1; font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif; padding: 2.4cqw 3cqw; display: grid; grid-template-rows: auto auto 1fr; gap: 1.8cqw; }
 .pfc-top { display: flex; align-items: center; gap: 1.2cqw; font-size: 1.5cqw; }
-.pfc-logo { width: 2.6cqw; height: 2.6cqw; border-radius: .7cqw; background: #4C7DFF; box-shadow: 0 0 2cqw rgba(76,125,255,.5); }
-.pfc-game { margin-left: auto; font-size: 1.25cqw; color: #B4BFD4; border: 1px solid #22304C; border-radius: .8cqw; padding: .5cqw 1.2cqw; }
+.pfc-logo { width: 2.6cqw; height: 2.6cqw; border-radius: .8cqw; background: #D7F25F; }
+.pfc-game { margin-left: auto; font-size: 1.25cqw; color: #C8C8CC; background: #29292B; border-radius: 99px; padding: .6cqw 1.6cqw; }
 .pfc-ks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2cqw; }
-.pfc-k, .pfc-c { background: linear-gradient(180deg, #151F34, #101829 70%); border: 1px solid #22304C; border-radius: 1.2cqw; padding: 1.4cqw 1.6cqw; min-width: 0; transition: border-color .3s, transform .3s; }
-.pfc-k small, .pfc-c small { display: block; font-size: 1.1cqw; color: #8592AD; }
+.pfc-k, .pfc-c { background: #29292B; border: 1px solid transparent; border-radius: 2cqw; padding: 1.4cqw 1.6cqw; min-width: 0; transition: border-color .3s, transform .3s; }
+.pfc-k small, .pfc-c small { display: block; font-size: 1.1cqw; color: #8E8E94; }
 .pfc-k b { display: block; margin-top: .4cqw; font-size: 3cqw; font-weight: 650; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .pfc-main { display: grid; grid-template-columns: 1.5fr 1fr; gap: 1.2cqw; min-height: 0; }
 .pfc-c { position: relative; overflow: hidden; }
-.pfc-row { display: grid; grid-template-columns: 30% 1fr; align-items: center; gap: 1cqw; margin-top: 1cqw; font-size: 1.05cqw; color: #B4BFD4; }
+.pfc-row { display: grid; grid-template-columns: 30% 1fr; align-items: center; gap: 1cqw; margin-top: 1cqw; font-size: 1.05cqw; color: #C8C8CC; }
 .pfc-row span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; min-height: 1.2cqw; }
 .pfc-row i { display: grid; gap: .25cqw; min-height: 1.6cqw; }
-.pfc-row i:empty { background: #1B2741; border-radius: .4cqw; }
+.pfc-row i:empty { background: #343437; border-radius: .4cqw; }
 .pfc-row em { display: block; height: .75cqw; border-radius: .4cqw; transform-origin: left; animation: pfcGrow 1s cubic-bezier(.2,.7,.2,1) both; }
-.pfc-row em.lw { background: rgba(133,146,173,.3); }
+.pfc-row em.lw { background: rgba(255,255,255,.14); }
 @keyframes pfcGrow { from { transform: scaleX(0); } }
-.pfc-ok { position: absolute; top: 1.3cqw; right: 1.4cqw; font-size: 1cqw; font-weight: 600; color: #34D399; background: rgba(52,211,153,.13); padding: .3cqw .9cqw; border-radius: 99px; }
-.pfc-ok.fb { color: #FF5D5D; background: rgba(255,93,93,.13); }
-.pfc-c p { margin-top: 1.2cqw; font-size: 1.2cqw; line-height: 1.55; color: #B4BFD4; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
-.pfc-wait { height: 60%; border-radius: .6cqw; background: #1B2741; }
-.feat:hover .pfc-k, .feat:hover .pfc-c { border-color: #2E3E60; }
+.pfc-ok { position: absolute; top: 1.3cqw; right: 1.4cqw; font-size: 1cqw; font-weight: 700; color: #1A1A1A; background: #D7F25F; padding: .3cqw .9cqw; border-radius: 99px; }
+.pfc-ok.fb { color: #fff; background: rgba(0,0,0,.25); }
+.pfc-c p { margin-top: 1.2cqw; font-size: 1.2cqw; line-height: 1.55; color: rgba(255,255,255,.9); display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
+.pfc-wait { height: 60%; border-radius: .6cqw; background: rgba(255,255,255,.15); }
+.feat:hover .pfc-k { border-color: rgba(215,242,95,.35); }
+.pfc-main .pfc-c + .pfc-c { background: #5866F2; }
+.pfc-main .pfc-c + .pfc-c small { color: rgba(255,255,255,.75); }
 .cp-demo { aspect-ratio: auto; display: grid; }
 .cp-demo .game-bar { display: flex; justify-content: space-between; gap: var(--space-md); }
 .cp-demo .game-bar a { color: var(--color-accent); text-decoration: none; }
 .cp-demo .game-bar a:hover { color: var(--color-accent-hover); }
-.cp-demo iframe { display: block; width: 100%; height: min(82vh, 860px); border: 0; background: #0A1020; }
+.cp-demo iframe { display: block; width: 100%; height: min(82vh, 860px); border: 0; background: #333335; }
 @media (prefers-reduced-motion: reduce) { .pfc-row em { animation: none; } }
 .pfc .pfc-game:empty { display: none; }
 </style>
@@ -3147,7 +3149,7 @@ const BOBA = 'data:image/webp;base64,UklGRpIOAABXRUJQVlA4WAoAAAAQAAAAXwAAXwAAQUx
 
 /* PFC-JS */
 /* ===== player feedback copilot: thumbnail drawn from the real demo data (player-feedback-copilot/demo-data.js) ===== */
-const PFC_COL = { bug_crash: '#FF5D5D', performance_lag: '#FF8A4C', gameplay_balance: '#FFB547', cheating_hackers: '#E061C9', monetization_payment: '#A07CFF', matchmaking_servers: '#4C7DFF', ui_controls: '#38BDF8', content_request: '#2DD4BF', positive: '#34D399', other: '#64748B' };
+const PFC_COL = { bug_crash: '#FF7A6B', performance_lag: '#FF9F5A', gameplay_balance: '#F5C451', cheating_hackers: '#C38BFF', monetization_payment: '#6E7BFF', matchmaking_servers: '#5EC8F0', ui_controls: '#9AA4B2', content_request: '#4FD1B5', positive: '#D7F25F', other: '#6B6B70' };
 const PFC_ISSUES = ['bug_crash', 'performance_lag', 'gameplay_balance', 'cheating_hackers', 'monetization_payment', 'matchmaking_servers', 'ui_controls', 'content_request'];
 UI.pfcThumb = () => {
   const D = window.DEMO_DATA, r = D && D.reports && (D.reports[D.games.default] || Object.values(D.reports)[0]);
